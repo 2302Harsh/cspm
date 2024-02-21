@@ -10,7 +10,7 @@ const PieChart = () => {
     const [data, setData] = useState([]);
 
     useEffect (() => {
-        fetch('http://localhost:5001/api/pie')
+        fetch('https://cspmdashboard-api.vercel.app/api/pie')
             .then((response)=> response.json())
             .then((json) => setData(json))
     })
